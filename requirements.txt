@@ -1,5 +1,5 @@
 streamlit
-mysql-connector-python
 pandas
 plotly
-matplotlib
+mysql-connector-python
+sqlalchemy
