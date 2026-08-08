@@ -12,7 +12,8 @@ def get_db_connection():
                 user=st.secrets["tidb"]["user"],
                 password=st.secrets["tidb"]["password"],
                 database=st.secrets["tidb"]["database"],
-                ssl_verify_identity=True
+                ssl_verify_identity=False,
+                ssl_disabled=False
             )
         else:
             # Local machine par testing ke liye
