@@ -1,0 +1,101 @@
+employee_id,employee_name,department,designation,hire_date,salary
+1,Falan Madan,Sales,Manager,2021-09-04,107703.36
+2,Zinal Kapadia,Sales,Manager,2024-10-16,63605.23
+3,Jalsa Vyas,Sales,Team Lead,2025-11-03,106350.66
+4,Rachit Ahluwalia,Logistics,Manager,2024-05-18,43406.81
+5,Yashawini Rattan,Logistics,Executive,2026-04-30,86308.64
+6,Dayita Pal,Customer Support,Executive,2024-12-23,83514.87
+7,Lohit Lad,Sales,Team Lead,2025-07-06,130674.44
+8,Aarnav Bajaj,Customer Support,Senior Executive,2021-12-17,78581.65
+9,Dipta Dey,Customer Support,Executive,2026-07-14,144692.43
+10,Avi Nori,Marketing,Senior Executive,2023-10-05,99347.02
+11,Inaya Chopra,Marketing,Senior Executive,2024-04-14,101116.63
+12,Darika More,Operations,Senior Executive,2023-11-28,44071.95
+13,Balvan Madan,Logistics,Executive,2024-04-09,61848.03
+14,Eshana Sandhu,Logistics,Manager,2025-03-04,80239.1
+15,Samaksh Kant,Customer Support,Senior Executive,2026-08-01,49165.3
+16,Frado Majumdar,Logistics,Team Lead,2022-03-26,94688.12
+17,Lakshit Randhawa,Sales,Senior Executive,2025-05-05,139406.03
+18,Widisha Shanker,Operations,Executive,2025-09-24,126384.97
+19,Ekansh Ghose,Logistics,Senior Executive,2023-07-02,40849.36
+20,Abhiram Mannan,Marketing,Team Lead,2026-01-29,47523.29
+21,Daksha Dugar,Marketing,Executive,2022-08-26,72973.1
+22,Zehaan Tara,Customer Support,Team Lead,2024-10-02,122386.41
+23,Upadhriti Srivastava,Marketing,Senior Executive,2024-10-13,45226.77
+24,Rohan Roy,Sales,Senior Executive,2024-04-16,121485.96
+25,Lavanya Pau,Operations,Executive,2023-06-09,139467.38
+26,Shravya Palla,Operations,Manager,2021-10-18,135659.45
+27,Bhavna Chada,Logistics,Team Lead,2024-02-05,39722.43
+28,Bakhshi Chokshi,Logistics,Executive,2026-04-24,69160.66
+29,Benjamin Chaudry,Customer Support,Senior Executive,2025-04-08,115037.54
+30,Samar Suri,Logistics,Team Lead,2025-09-21,108276.84
+31,Orinder Shah,Sales,Team Lead,2025-05-21,61939.68
+32,Anusha Krishnan,Marketing,Executive,2025-04-30,86706.48
+33,Widisha Majumdar,Customer Support,Senior Executive,2025-12-29,115185.24
+34,Reva Taneja,Customer Support,Senior Executive,2025-01-09,33349.51
+35,Vinaya Saini,Marketing,Executive,2022-03-27,52465.51
+36,Anya Master,Customer Support,Senior Executive,2026-02-20,125536.59
+37,Harini Kaur,Customer Support,Senior Executive,2025-07-26,99811.84
+38,Falguni Narayanan,Marketing,Executive,2022-04-14,118316.36
+39,Daksh Dhar,Customer Support,Senior Executive,2022-05-29,128139.52
+40,Manbir Sachdev,Customer Support,Senior Executive,2022-08-19,89947.93
+41,Aarush Butala,Logistics,Executive,2024-06-02,103921.91
+42,Dalaja Bhalla,Marketing,Executive,2022-04-11,102374.25
+43,Abha Varma,Customer Support,Manager,2026-06-22,104343.06
+44,Wakeeta Ghose,Logistics,Manager,2021-11-23,132947.18
+45,Sathvik Tank,Customer Support,Manager,2022-06-09,57586.44
+46,Ekiya Wason,Marketing,Executive,2023-06-24,138703.07
+47,Vritti Devan,Customer Support,Senior Executive,2022-02-18,135377.07
+48,Tanvi Deshmukh,Marketing,Executive,2026-01-16,122280.1
+49,Chatresh Mohan,Customer Support,Manager,2023-02-27,109837.94
+50,Yashvi Koshy,Sales,Team Lead,2022-01-18,80878.45
+51,Darika Chandran,Logistics,Manager,2023-08-14,54932.89
+52,Imaran Muni,Customer Support,Senior Executive,2025-02-09,74118.95
+53,Henry Dey,Operations,Team Lead,2025-12-25,135566.43
+54,Siya Mandal,Operations,Team Lead,2022-01-16,133103.87
+55,Jagat Kibe,Sales,Team Lead,2025-01-11,105779.15
+56,Sanya Banik,Sales,Executive,2026-01-02,123198.51
+57,Yashodhara Mohan,Sales,Executive,2023-12-17,38884.62
+58,Tanvi Shankar,Marketing,Senior Executive,2024-02-29,94853.9
+59,Zaid Chandran,Operations,Executive,2022-05-02,112682.39
+60,Akshay Biswas,Operations,Manager,2025-05-03,50982.86
+61,Arin Pau,Sales,Team Lead,2025-01-09,67151.16
+62,Idika Peri,Customer Support,Executive,2024-11-14,113298.45
+63,Aadi Thaker,Operations,Senior Executive,2023-03-24,95737.12
+64,Mitesh Kothari,Operations,Manager,2021-11-27,35656.16
+65,Joshua Natarajan,Operations,Manager,2024-09-06,116951.01
+66,Veer Rattan,Logistics,Executive,2025-07-29,54136.95
+67,Wahab Chadha,Sales,Executive,2026-04-30,80942.53
+68,Wazir Maharaj,Customer Support,Manager,2025-09-18,107782.16
+69,Teerth Varkey,Operations,Senior Executive,2023-02-25,44438.91
+70,Aarush Barman,Sales,Executive,2024-05-26,34635.25
+71,Orinder Bajaj,Marketing,Executive,2024-12-13,137683.65
+72,Xavier Karpe,Operations,Manager,2023-05-01,85233.3
+73,Mekhala Prakash,Logistics,Team Lead,2022-12-03,126371.07
+74,Chakradhar Mannan,Sales,Senior Executive,2024-02-06,28885.48
+75,Ayushman Choudhary,Operations,Executive,2025-11-22,69644.45
+76,Chakradhar Chand,Sales,Team Lead,2026-06-11,125622.73
+77,Raghav Dara,Logistics,Senior Executive,2026-02-27,128168.52
+78,Meghana Balay,Customer Support,Manager,2024-01-12,141680.0
+79,Chasmum Goyal,Logistics,Manager,2023-04-24,49893.39
+80,Yug Malhotra,Marketing,Executive,2024-05-24,120289.42
+81,Shravya Vala,Customer Support,Manager,2025-12-18,98945.61
+82,Urvi Misra,Logistics,Team Lead,2023-03-30,113301.08
+83,Raagini Bava,Logistics,Manager,2025-11-02,145600.74
+84,Triveni Dara,Sales,Senior Executive,2022-12-16,134823.8
+85,George Bhandari,Operations,Manager,2022-06-25,61025.37
+86,Gaurav Arya,Marketing,Manager,2023-05-22,146234.48
+87,Darpan Agate,Sales,Senior Executive,2023-09-07,124172.93
+88,Jeevika Dhingra,Logistics,Executive,2025-06-10,107602.97
+89,Raksha Ramaswamy,Logistics,Manager,2026-07-26,107640.13
+90,Suhani Sundaram,Operations,Team Lead,2024-02-14,132239.94
+91,Neel Murty,Customer Support,Team Lead,2025-01-02,72306.41
+92,Gauri Sengupta,Marketing,Senior Executive,2022-12-30,84977.52
+93,Ojas Nigam,Sales,Manager,2025-11-03,56507.42
+94,Liam Rau,Customer Support,Team Lead,2024-07-21,90624.09
+95,Lohit Chopra,Marketing,Team Lead,2022-10-22,92545.48
+96,Ayaan Bava,Marketing,Manager,2025-06-15,67327.63
+97,Banjeet Khanna,Customer Support,Executive,2025-11-29,33306.03
+98,Henry Mishra,Customer Support,Manager,2025-09-13,143084.45
+99,Daniel Sood,Marketing,Manager,2021-10-29,119772.95
+100,Kashish Lata,Marketing,Manager,2023-03-19,104100.55
