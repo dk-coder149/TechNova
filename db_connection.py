@@ -27,6 +27,30 @@ def get_db_connection():
         st.error(f"Database Connection Error: {e}")
         return None
 
+def init_db():
+    """TiDB database me users table auto-create karne ke liye"""
+    conn = get_db_connection()
+    if conn:
+        try:
+            cursor = conn.cursor()
+            cursor.execute("""
+                CREATE TABLE IF NOT EXISTS users (
+                    id INT AUTO_INCREMENT PRIMARY KEY,
+                    username VARCHAR(255) UNIQUE NOT NULL,
+                    password VARCHAR(255) NOT NULL,
+                    role VARCHAR(50) DEFAULT 'user'
+                )
+            """)
+            conn.commit()
+        except Exception as e:
+            st.error(f"Table Creation Error: {e}")
+        finally:
+            cursor.close()
+            conn.close()
+
+# App load hote hi table setup chalega
+init_db()
+
 def login_user(username, password):
     conn = get_db_connection()
     if not conn:
