@@ -1,6 +1,7 @@
 import os
 import mysql.connector
 import streamlit as st
+from sqlalchemy import create_engine
 
 def get_db_connection():
     try:
@@ -28,6 +29,28 @@ def get_db_connection():
         st.error(f"Database Connection Error: {e}")
         return None
 
+def get_db_engine():
+    """Pandas ke saath SQL queries run karne ke liye SQLAlchemy engine"""
+    try:
+        if "tidb" in st.secrets:
+            user = st.secrets["tidb"]["user"]
+            password = st.secrets["tidb"]["password"]
+            host = st.secrets["tidb"]["host"]
+            port = st.secrets["tidb"]["port"]
+            database = st.secrets["tidb"]["database"]
+            db_url = f"mysql+mysqlconnector://{user}:{password}@{host}:{port}/{database}"
+            engine = create_engine(
+                db_url, 
+                connect_args={"ssl_verify_identity": False, "ssl_disabled": False}
+            )
+            return engine
+        else:
+            db_url = "mysql+mysqlconnector://root:YOUR_LOCAL_MYSQL_PASSWORD@127.0.0.1:3306/retail_analytics_db"
+            return create_engine(db_url)
+    except Exception as e:
+        st.error(f"DB Engine Error: {e}")
+        return None
+
 def init_db():
     """Ensure users table exists in TiDB database"""
     conn = get_db_connection()
@@ -50,7 +73,7 @@ def init_db():
             conn.close()
 
 def login_user(username, password):
-    init_db()  # Table exist karti hai ya nahi ye ensure karega
+    init_db()
     conn = get_db_connection()
     if not conn:
         return None
@@ -68,7 +91,7 @@ def login_user(username, password):
         conn.close()
 
 def register_user(username, password, role="user"):
-    init_db()  # Table exist karti hai ya nahi ye ensure karega
+    init_db()
     conn = get_db_connection()
     if not conn:
         return False
