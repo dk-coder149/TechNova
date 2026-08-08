@@ -19,10 +19,44 @@ def get_db_connection():
             connection = mysql.connector.connect(
                 host="127.0.0.1",
                 user="root",
-                password="YOUR_LOCAL_MYSQL_PASSWORD",  # Apne computer ke MySQL ka password yahan daalein
+                password="YOUR_LOCAL_MYSQL_PASSWORD",
                 database="retail_analytics_db"
             )
         return connection
     except Exception as e:
         st.error(f"Database Connection Error: {e}")
         return None
+
+def login_user(username, password):
+    conn = get_db_connection()
+    if not conn:
+        return None
+    cursor = conn.cursor(dictionary=True)
+    try:
+        query = "SELECT * FROM users WHERE username = %s AND password = %s"
+        cursor.execute(query, (username, password))
+        user = cursor.fetchone()
+        return user
+    except Exception as e:
+        st.error(f"Login Error: {e}")
+        return None
+    finally:
+        cursor.close()
+        conn.close()
+
+def register_user(username, password, role="user"):
+    conn = get_db_connection()
+    if not conn:
+        return False
+    cursor = conn.cursor()
+    try:
+        query = "INSERT INTO users (username, password, role) VALUES (%s, %s, %s)"
+        cursor.execute(query, (username, password, role))
+        conn.commit()
+        return True
+    except Exception as e:
+        st.error(f"Registration Error: {e}")
+        return False
+    finally:
+        cursor.close()
+        conn.close()
