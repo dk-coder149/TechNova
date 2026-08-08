@@ -29,7 +29,7 @@ def get_db_connection():
         return None
 
 def init_db():
-    """TiDB database me users table auto-create karne ke liye"""
+    """Ensure users table exists in TiDB database"""
     conn = get_db_connection()
     if conn:
         try:
@@ -49,10 +49,8 @@ def init_db():
             cursor.close()
             conn.close()
 
-# App load hote hi table setup chalega
-init_db()
-
 def login_user(username, password):
+    init_db()  # Table exist karti hai ya nahi ye ensure karega
     conn = get_db_connection()
     if not conn:
         return None
@@ -70,6 +68,7 @@ def login_user(username, password):
         conn.close()
 
 def register_user(username, password, role="user"):
+    init_db()  # Table exist karti hai ya nahi ye ensure karega
     conn = get_db_connection()
     if not conn:
         return False
